@@ -1,3 +1,4 @@
 This is file2.txt
 added new file
 This is the line added in local git repo
+This line was added in Github
