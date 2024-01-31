@@ -7,3 +7,7 @@ $ this is added for first commit
 This is the second commit added for testing
 
 this is test line-1
+
+
+
+This is for master branch test
