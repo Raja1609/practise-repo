@@ -4,6 +4,6 @@ This is the line added in local git repo
 This line was added in Github
 
 $ this is added for first commit
-this line will be replaced
+This is the second commit added for testing
 
 this is test line-1
