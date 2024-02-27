@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: sample-container
-          image: nginx:latest  # Replace with your desired container image
+          image: nginx:1.19  # Replace with your desired container image
           ports:
             - containerPort: 80
 
