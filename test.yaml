@@ -1,0 +1,30 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: test-runner
+  namespace: runners
+spec:
+  template:
+    spec:
+      image: ghcr.io/actions/runner:latest  # Using the public GitHub Actions runner image
+      organization: test
+      labels:
+        - test-runner
+      workDir: /home/runners/actions-runner/_work
+      containers:
+        - name: runner
+          securityContext:
+            privileged: false
+            allowPrivilegeEscalation: false
+        - name: docker
+          securityContext:
+            privileged: true  # Set to true to allow Docker to run
+            allowPrivilegeEscalation: false
+      resources:
+        limits:
+          cpu: "4.0"
+          memory: "10Gi"
+        requests:
+          cpu: "2.0"
+          memory: "8Gi"
+
