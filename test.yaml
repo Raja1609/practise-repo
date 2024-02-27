@@ -6,7 +6,7 @@ metadata:
 spec:
   template:
     spec:
-      image: ghcr.io/actions/runner:latest  # Using the public GitHub Actions runner image
+      image: ghcr.io/actions/runner:latest 
       organization: test
       labels:
         - test-runner
@@ -23,8 +23,8 @@ spec:
       resources:
         limits:
           cpu: "4.0"
-          memory: "10Gi"
+          memory: "8Gi"
         requests:
           cpu: "2.0"
-          memory: "8Gi"
+          memory: "6Gi"
 
