@@ -4,4 +4,7 @@ adding few more lines
 hey hi
 
 # added this file for second commit
+
+This lines are added for testing the rebase function in the master branch
+
 to test the commit references
