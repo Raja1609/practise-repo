@@ -18,3 +18,4 @@ spec:
           ports:
             - containerPort: 80
 
+## These changes are done for the deployment file and the above deployment can be used for nginx sample deployment
